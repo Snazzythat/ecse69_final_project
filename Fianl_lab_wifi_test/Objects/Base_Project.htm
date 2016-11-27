@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\Base_Project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\Base_Project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050169: Last Updated: Sat Nov 26 20:04:30 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5050169: Last Updated: Sat Nov 26 22:11:23 2016
 <BR><P>
 <H3>Maximum Stack Usage =        160 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -180,8 +180,8 @@ Global Symbols
 <P><STRONG><a name="[9]"></a>PendSV_Handler</STRONG> (Thumb, 96 bytes, Stack size 0 bytes, hal_cm4.o(.emb_text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = PendSV_Handler &rArr; rt_pop_req &rArr; rt_mbx_psh &rArr; rt_ret_val2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_stk_check
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_stk_check
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f407xx.o(RESET)
 </UL>
@@ -864,8 +864,8 @@ Global Symbols
 <P><STRONG><a name="[b1]"></a>LIS3DSH_Read</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, lis3dsh.o(i.LIS3DSH_Read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LIS3DSH_Read &rArr; LIS3DSH_SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_SendByte
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_SendByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_DataReadyInterruptConfig
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;acc_read
@@ -878,8 +878,8 @@ Global Symbols
 <P><STRONG><a name="[b2]"></a>LIS3DSH_Write</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, lis3dsh.o(i.LIS3DSH_Write))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = LIS3DSH_Write &rArr; LIS3DSH_SendByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_SendByte
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_SendByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_Init
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LIS3DSH_DataReadyInterruptConfig
@@ -1047,8 +1047,8 @@ Global Symbols
 <P><STRONG><a name="[ce]"></a>isrSignalSet</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, rt_cmsis.o(i.isrSignalSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = isrSignalSet &rArr; isr_evt_set &rArr; rt_psq_enq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tid2ptcb
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_evt_set
+<BR>[Calls]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isr_evt_set
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tid2ptcb
 </UL>
 <BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;osSignalSet
 </UL>
@@ -1158,10 +1158,10 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> rtx_conf_cm.o(.constdata)
 </UL>
 <P><STRONG><a name="[e6]"></a>os_error</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, rtx_conf_cm.o(i.os_error))
-<BR><BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_stk_check
+<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_stk_check
 <LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_psq_enq
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sysTimerTick
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
 </UL>
 
 <P><STRONG><a name="[69]"></a>os_idle_demon</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, rtx_conf_cm.o(i.os_idle_demon))
@@ -1178,10 +1178,10 @@ Global Symbols
 <P><STRONG><a name="[5c]"></a>rt_alloc_box</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rt_membox.o(i.rt_alloc_box))
 <BR><BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_alloc_box
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_init_context
+<BR>[Called By]<UL><LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_init_context
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_create
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_alloc_box
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> hal_cm4.o(.emb_text)
 </UL>
@@ -1236,9 +1236,9 @@ Global Symbols
 <P><STRONG><a name="[de]"></a>rt_evt_psh</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, rt_event.o(i.rt_evt_psh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = rt_evt_psh &rArr; rt_ret_val2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_rmv_dly
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_rmv_dly
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_put_prio
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
 </UL>
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
 </UL>
@@ -1246,9 +1246,9 @@ Global Symbols
 <P><STRONG><a name="[e1]"></a>rt_evt_set</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, rt_event.o(i.rt_evt_set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = rt_evt_set &rArr; rt_dispatch &rArr; rt_put_prio
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
-<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_rmv_dly
+<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_rmv_dly
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
 </UL>
 <BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;svcSignalSet
 </UL>
@@ -1264,16 +1264,16 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[d7]"></a>rt_get_first</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, rt_list.o(i.rt_get_first))
-<BR><BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_chk_robin
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_prio
+<BR><BR>[Called By]<UL><LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_prio
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_wait
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_block
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_chk_robin
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
 </UL>
 
 <P><STRONG><a name="[fa]"></a>rt_init_mem</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, rt_memory.o(i.rt_init_mem))
@@ -1302,12 +1302,12 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = rt_mbx_psh &rArr; rt_ret_val2
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_error
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
 <LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_rmv_dly
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_put_prio
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_get_first
 <LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_alloc_box
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
 </UL>
 <BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
 </UL>
@@ -1328,12 +1328,12 @@ Global Symbols
 <P><STRONG><a name="[75]"></a>rt_pop_req</STRONG> (Thumb, 112 bytes, Stack size 16 bytes, rt_system.o(i.rt_pop_req))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = rt_pop_req &rArr; rt_mbx_psh &rArr; rt_ret_val2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_put_rdy_first
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_put_rdy_first
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_switch_req
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_get_first
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
 </UL>
@@ -1363,22 +1363,22 @@ Global Symbols
 <P><STRONG><a name="[da]"></a>rt_put_prio</STRONG> (Thumb, 54 bytes, Stack size 12 bytes, rt_list.o(i.rt_put_prio))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = rt_put_prio
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dec_dly
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_chk_robin
-<LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_resort_prio
+<BR>[Called By]<UL><LI><a href="#[e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_resort_prio
 <LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_prio
 <LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_wait
 <LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dec_dly
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_chk_robin
 </UL>
 
 <P><STRONG><a name="[dd]"></a>rt_put_rdy_first</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, rt_list.o(i.rt_put_rdy_first))
-<BR><BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
+<BR><BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
 <LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
 </UL>
 
 <P><STRONG><a name="[e9]"></a>rt_resort_prio</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, rt_list.o(i.rt_resort_prio))
@@ -1395,10 +1395,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_regs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_wait
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
 </UL>
 
 <P><STRONG><a name="[e0]"></a>rt_ret_val2</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, hal_cm.o(i.rt_ret_val2))
@@ -1406,20 +1406,20 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_regs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
+<BR>[Called By]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_set
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_set
 </UL>
 
 <P><STRONG><a name="[df]"></a>rt_rmv_dly</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, rt_list.o(i.rt_rmv_dly))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = rt_rmv_dly
 </UL>
-<BR>[Called By]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
-<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_wait
 <LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_set
+<LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_sem_psh
+<LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_psh
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_psh
 </UL>
 
 <P><STRONG><a name="[ea]"></a>rt_rmv_list</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, rt_list.o(i.rt_rmv_list))
@@ -1441,18 +1441,18 @@ Global Symbols
 <P><STRONG><a name="[74]"></a>rt_stk_check</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, rt_system.o(i.rt_stk_check))
 <BR><BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_error
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
+<LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PendSV_Handler
 <LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SVC_Handler
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
 </UL>
 
 <P><STRONG><a name="[d8]"></a>rt_switch_req</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, rt_task.o(i.rt_switch_req))
 <BR><BR>[Calls]<UL><LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;dbg_task_switch
 </UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
+<BR>[Called By]<UL><LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dispatch
 <LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_block
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_pop_req
 </UL>
 
 <P><STRONG><a name="[ed]"></a>rt_sys_init</STRONG> (Thumb, 138 bytes, Stack size 16 bytes, rt_task.o(i.rt_sys_init))
@@ -1477,12 +1477,12 @@ Global Symbols
 <P><STRONG><a name="[76]"></a>rt_systick</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, rt_system.o(i.rt_systick))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = rt_systick &rArr; sysTimerTick &rArr; isrMessagePut &rArr; isr_mbx_send &rArr; rt_psq_enq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dec_dly
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_chk_robin
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_put_rdy_first
+<BR>[Calls]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_put_rdy_first
 <LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_switch_req
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_get_first
 <LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sysTimerTick
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_dec_dly
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_chk_robin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OS_Tick_Handler
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SysTick_Handler
@@ -1562,16 +1562,16 @@ Global Symbols
 <P><STRONG><a name="[63]"></a>svcMessageGet</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, rt_cmsis.o(i.svcMessageGet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = svcMessageGet &rArr; rt_mbx_wait &rArr; rt_dispatch &rArr; rt_put_prio
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ms2tick
-<LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_wait
+<BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_mbx_wait
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ms2tick
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rt_cmsis.o(i.osMessageGet)
 </UL>
 <P><STRONG><a name="[64]"></a>svcSignalSet</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, rt_cmsis.o(i.svcSignalSet))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = svcSignalSet &rArr; rt_evt_set &rArr; rt_dispatch &rArr; rt_put_prio
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tid2ptcb
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_set
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_evt_set
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tid2ptcb
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rt_cmsis.o(i.osSignalSet)
 </UL>
@@ -1597,9 +1597,9 @@ Global Symbols
 <P><STRONG><a name="[67]"></a>svcThreadTerminate</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, rt_cmsis.o(i.svcThreadTerminate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = svcThreadTerminate &rArr; rt_tsk_delete &rArr; rt_dispatch &rArr; rt_put_prio
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tid2ptcb
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
+<BR>[Calls]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tsk_delete
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_free_mem
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_tid2ptcb
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> rt_cmsis.o(i.osThreadExit)
 </UL>
@@ -1614,8 +1614,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = sysTimerTick &rArr; isrMessagePut &rArr; isr_mbx_send &rArr; rt_psq_enq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;os_error
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_insert
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isrMessagePut
+<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_timer_insert
 </UL>
 <BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_systick
 </UL>
@@ -1694,8 +1694,8 @@ Local Symbols
 </UL>
 
 <P><STRONG><a name="[eb]"></a>rt_ret_regs</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, hal_cm.o(i.rt_ret_regs))
-<BR><BR>[Called By]<UL><LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
-<LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val
+<BR><BR>[Called By]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rt_ret_val2
 </UL>
 
 <P><STRONG><a name="[bd]"></a>_fp_digits</STRONG> (Thumb, 334 bytes, Stack size 56 bytes, printfa.o(i._fp_digits), UNUSED)

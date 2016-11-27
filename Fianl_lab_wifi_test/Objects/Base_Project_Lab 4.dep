@@ -1,5 +1,5 @@
 Dependencies for Project 'Base_Project', Target 'Lab 4': (DO NOT MODIFY !)
-F (.\Sources\main.c)(0x583A3112)(-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\Fianl_lab_wifi_test\RTE-I F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\Sources\main.c)(0x583A4E82)(-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\Fianl_lab_wifi_test\RTE-I F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (.\Headers\main.h)(0x583A3024)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5730FE0E)
 I (F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5658F152)
@@ -346,8 +346,52 @@ I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5730FE10)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h)(0x5730FE10)
 I (.\Headers\cc2500_settings.h)(0x583A089E)
-F (.\Sources\wireless.c)(0x583A02C2)(-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\Fianl_lab_wifi_test\RTE-I F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\wireless.o --omf_browse .\objects\wireless.crf --depend .\objects\wireless.d)
-I (.\Headers\wireless.h)(0x583A3088)
+F (.\Sources\wireless.c)(0x583A4E7C)(-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\Fianl_lab_wifi_test\RTE-I F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\wireless.o --omf_browse .\objects\wireless.crf --depend .\objects\wireless.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
+I (.\Headers\wireless.h)(0x583A4ECC)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x572CA05E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f407xx.h)(0x572CA05E)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm4.h)(0x57365A7E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cminstr.h)(0x5735F386)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\cmsis_armcc.h)(0x5735F386)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmfunc.h)(0x5735F386)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cmsimd.h)(0x5735F386)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x572CA060)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5730FE0E)
+I (F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5658F152)
+I (F:\McGill\Fianl_lab_wifi_test\RTE\RTE_Components.h)(0x5813DB76)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h)(0x5730FF44)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x5730FE0E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x5730FE0E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x5730FE0E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x5730FE0E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_sram.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_fsmc.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2c_ex.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_i2s_ex.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x5730FE0E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h)(0x5730FE0E)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5730FE10)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h)(0x5730FE10)
+I (.\Headers\cc2500.h)(0x583A07E8)
 F (.\Sources\LIS3DSH.c)(0x5839F550)(-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\Fianl_lab_wifi_test\RTE-I F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\lis3dsh.o --omf_browse .\objects\lis3dsh.crf --depend .\objects\lis3dsh.d)
 I (.\Headers\lis3dsh.h)(0x583793DE)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5730FE0E)
@@ -845,7 +889,7 @@ F (.\Headers\led_thread.h)(0x581BCAFA)()
 F (.\Headers\temperature_sensor.h)(0x581B926A)()
 F (.\Headers\cc2500_settings.h)(0x583A089E)()
 F (.\Headers\cc2500.h)(0x583A07E8)()
-F (.\Headers\wireless.h)(0x583A3088)()
+F (.\Headers\wireless.h)(0x583A4ECC)()
 F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib)(0x57365A7E)()
 F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib)(0x57365A80)()
 F (RTE\CMSIS\RTX_Conf_CM.c)(0x58195698)(-c --cpu Cortex-M4.fp -D__RTX -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\Fianl_lab_wifi_test\RTE-I F:\McGill\Fianl_lab_wifi_test\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
