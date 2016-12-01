@@ -33,7 +33,7 @@
 //#include "kalman_filter.h"
 
 // EXTERN
-extern int display_counter;
+extern int display_counter, connected;
 extern TIM_HandleTypeDef TIM_Handle2, TIM_Handle3, TIM_Handle4;
 //extern TM_LIS302DL_t axis_data_struct;
 //extern float acc_lis3dsh, temperature;

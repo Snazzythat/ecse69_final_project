@@ -15,7 +15,7 @@
 ** Return:	None
 */
 int main(void)
-{
+ {
 	//	MCU Configuration: Reset of all peripherals, Initializes the Flash interface and the Systick
   HAL_Init();
 	
@@ -31,10 +31,10 @@ int main(void)
 	tim3_init();
 	tim4_init();
 	
-//	// Display initialization
-//	rgb_led_init();
-//	gpio_led_init();
-//	segment_display_init();
+	// Display initialization
+	rgb_led_init();
+	gpio_led_init();
+	segment_display_init();
 //	segment_segments_init();
 	
 //	// I/O initialization

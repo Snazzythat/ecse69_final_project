@@ -29,7 +29,7 @@ void segment_display_init(void);
 //void segment_segments_init(void);
 void display_cycling(void);
 void blink_counter(void);
-void display(float, int);
+void display(int, int);
 void led_number(char, int);
 void led_char(char, int);
 

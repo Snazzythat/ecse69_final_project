@@ -20,12 +20,11 @@
  *
  * @return void
  */
-static void transmit_ack(void)
+void transmit_ack(void)
 {
 	CC2500_flush_tx();
 	CC2500_write_tx_one(0xFF);
 }
-
 
 /**
  * Comfirm that an ACK has been received
@@ -35,7 +34,7 @@ static void transmit_ack(void)
  *
  * @return int 1 for confirmation, 0 for fail
  */
-static int transmit_comfirm(uint8_t hex)
+int transmit_comfirm(uint8_t hex)
 {
 	if (hex == 0xFF)
 		return 1;
@@ -79,9 +78,43 @@ uint8_t byte_receive(void)
 	return data;
 }
 
-// Burst byte receiving
-void burst_receive(uint8_t *data, int len)
+// Burst byte receiving, returns 1 if flushed
+int burst_receive(uint8_t *data, int len)
 {
-	CC2500_read_one(CC2500_SRX);
-	CC2500_Read(data, 0x3f|0xC0, len);
+	uint8_t state;
+	uint8_t byte;
+	
+	CC2500_read_one(CC2500_SIDLE);
+	state = CC2500_get_state();
+	printf("State: %x\n", state);
+	if (state == 1)
+	{
+		CC2500_read_one(CC2500_SRX);
+		
+		byte = CC2500_get_rxbytes();
+		printf("# Bytes: %x\n", byte);
+		if (byte == len)
+		{
+			CC2500_Read(data, CC2500_RX_FIFO_BURST, len);
+			for (int i = 0; i < len; i++)
+			{
+				printf("Packet %d: %x\n", i, data[i]);
+				state = CC2500_get_state();
+				printf("State: %x\n", state);
+			}
+		}
+		
+		else if (byte > 0)
+		{
+			CC2500_flush_rx();
+			printf("Flushed.\n");
+			return 1;
+		}
+	}
+	else
+	{
+		return 1;
+		printf("Not IDLE.\n");
+	}
+	return 0;
 }

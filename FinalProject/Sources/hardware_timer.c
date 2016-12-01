@@ -74,8 +74,8 @@ void tim4_init(void)
 	// PERIOD*PRESCALAR CANNOT EXCEED 16BIT (TIM4)
 	TIM_Handle4.Instance 								= TIM4;
 	TIM_Handle4.Init.ClockDivision 			= 0;
-	TIM_Handle4.Init.Prescaler 					= 8400;												// PRESCALAR OF 8400 (PRESCALAR OF 5999 - OLD)
-	TIM_Handle4.Init.Period 						= 10;													// PERIOD OF 10 FOR 1000HZ REFRESH RATE FOR ADC
+	TIM_Handle4.Init.Prescaler 					= 819;												// PRESCALAR OF 840
+	TIM_Handle4.Init.Period 						= 99999;													// PERIOD OF 10 FOR 200HZ REFRESH RATE FOR ADC
 	TIM_Handle4.Init.CounterMode 				= TIM_COUNTERMODE_UP;
 	TIM_Handle4.Init.ClockDivision 			= TIM_CLOCKDIVISION_DIV1;
 	TIM_Handle4.Init.RepetitionCounter 	= 0;
@@ -96,7 +96,9 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 //	else if(htim->Instance == TIM3)
 //		osSignalSet(keypad_thread_ID, 0x00000001);
 	else if(htim->Instance == TIM4)
+	{
 		osSignalSet(transceiver_thread_ID, 0x00000001);
 		osSignalSet(led_thread_ID, 0x00000001);
+	}
 //		osSignalSet(temp_thread_ID, 0x00000001);
 }

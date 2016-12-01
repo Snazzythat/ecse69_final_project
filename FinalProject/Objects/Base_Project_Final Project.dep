@@ -1,6 +1,6 @@
 Dependencies for Project 'Base_Project', Target 'Final Project': (DO NOT MODIFY !)
-F (.\Sources\main.c)(0x583E19F6)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Headers\main.h)(0x583F4EA4)
+F (.\Sources\main.c)(0x583FA4CE)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Headers\main.h)(0x583F8EEC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
@@ -48,14 +48,14 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x57
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C318A8)
 I (.\Headers\sysclk_config.h)(0x57F11764)
 I (.\Headers\supporting_functions.h)(0x56D20B12)
-I (.\Headers\display.h)(0x581BCC66)
-I (.\Headers\transceiver_protocol.h)(0x583F64FE)
+I (.\Headers\display.h)(0x583F889E)
+I (.\Headers\transceiver_protocol.h)(0x583F8F8A)
 I (.\Headers\cc2500.h)(0x583F4694)
 I (.\Headers\hardware_timer.h)(0x581BC75A)
 I (.\Headers\display_thread.h)(0x581BCB1C)
 I (.\Headers\led_thread.h)(0x581BCAFA)
 I (.\Headers\transceiver_thread.h)(0x583E1048)
-F (.\Sources\display.c)(0x581BC740)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\display.o --omf_browse .\objects\display.crf --depend .\objects\display.d)
+F (.\Sources\display.c)(0x583F96C8)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\display.o --omf_browse .\objects\display.crf --depend .\objects\display.d)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5730FE0E)
 I (F:\McGill\FinalProject\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5658F152)
 I (F:\McGill\FinalProject\RTE\RTE_Components.h)(0x583DF34C)
@@ -98,8 +98,8 @@ I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x5730FE10)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5730FE10)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h)(0x5730FE10)
-I (.\Headers\display.h)(0x581BCC66)
-F (.\Sources\hardware_timer.c)(0x583E19EE)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\hardware_timer.o --omf_browse .\objects\hardware_timer.crf --depend .\objects\hardware_timer.d)
+I (.\Headers\display.h)(0x583F889E)
+F (.\Sources\hardware_timer.c)(0x583FA454)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\hardware_timer.o --omf_browse .\objects\hardware_timer.crf --depend .\objects\hardware_timer.d)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5730FE0E)
 I (F:\McGill\FinalProject\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5658F152)
 I (F:\McGill\FinalProject\RTE\RTE_Components.h)(0x583DF34C)
@@ -149,11 +149,11 @@ I (.\Headers\hardware_timer.h)(0x581BC75A)
 I (.\Headers\display_thread.h)(0x581BCB1C)
 I (.\Headers\transceiver_thread.h)(0x583E1048)
 I (.\Headers\led_thread.h)(0x581BCAFA)
-F (.\Sources\transceiver_protocol.c)(0x583F64E4)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\transceiver_protocol.o --omf_browse .\objects\transceiver_protocol.crf --depend .\objects\transceiver_protocol.d)
+F (.\Sources\transceiver_protocol.c)(0x583FA4CE)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\transceiver_protocol.o --omf_browse .\objects\transceiver_protocol.crf --depend .\objects\transceiver_protocol.d)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
-I (.\Headers\transceiver_protocol.h)(0x583F64FE)
+I (.\Headers\transceiver_protocol.h)(0x583F8F8A)
 I (.\Headers\cc2500.h)(0x583F4694)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x5730FE0E)
 I (F:\McGill\FinalProject\RTE\Device\STM32F407VGTx\stm32f4xx_hal_conf.h)(0x5658F152)
@@ -197,7 +197,7 @@ I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h)(0x5730FE10)
 F (.\Sources\stm32f4xx_it.c)(0x581BC3F6)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
 I (.\Headers\stm32f4xx_it.h)(0x56D20B12)
-I (.\Headers\main.h)(0x583F4EA4)
+I (.\Headers\main.h)(0x583F8EEC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
@@ -245,8 +245,8 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x57
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C318A8)
 I (.\Headers\sysclk_config.h)(0x57F11764)
 I (.\Headers\supporting_functions.h)(0x56D20B12)
-I (.\Headers\display.h)(0x581BCC66)
-I (.\Headers\transceiver_protocol.h)(0x583F64FE)
+I (.\Headers\display.h)(0x583F889E)
+I (.\Headers\transceiver_protocol.h)(0x583F8F8A)
 I (.\Headers\cc2500.h)(0x583F4694)
 I (.\Headers\hardware_timer.h)(0x581BC75A)
 I (.\Headers\display_thread.h)(0x581BCB1C)
@@ -346,8 +346,8 @@ I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x5730FE10)
 I (C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_usart.h)(0x5730FE10)
 I (.\Headers\cc2500_settings.h)(0x583F46A2)
-F (.\Sources\display_thread.c)(0x583E07A6)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\display_thread.o --omf_browse .\objects\display_thread.crf --depend .\objects\display_thread.d)
-I (.\Headers\main.h)(0x583F4EA4)
+F (.\Sources\display_thread.c)(0x583F8EDC)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\display_thread.o --omf_browse .\objects\display_thread.crf --depend .\objects\display_thread.d)
+I (.\Headers\main.h)(0x583F8EEC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
@@ -395,15 +395,15 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x57
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C318A8)
 I (.\Headers\sysclk_config.h)(0x57F11764)
 I (.\Headers\supporting_functions.h)(0x56D20B12)
-I (.\Headers\display.h)(0x581BCC66)
-I (.\Headers\transceiver_protocol.h)(0x583F64FE)
+I (.\Headers\display.h)(0x583F889E)
+I (.\Headers\transceiver_protocol.h)(0x583F8F8A)
 I (.\Headers\cc2500.h)(0x583F4694)
 I (.\Headers\hardware_timer.h)(0x581BC75A)
 I (.\Headers\display_thread.h)(0x581BCB1C)
 I (.\Headers\led_thread.h)(0x581BCAFA)
 I (.\Headers\transceiver_thread.h)(0x583E1048)
 F (.\Sources\led_thread.c)(0x581CC92E)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\led_thread.o --omf_browse .\objects\led_thread.crf --depend .\objects\led_thread.d)
-I (.\Headers\main.h)(0x583F4EA4)
+I (.\Headers\main.h)(0x583F8EEC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
@@ -451,15 +451,15 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x57
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C318A8)
 I (.\Headers\sysclk_config.h)(0x57F11764)
 I (.\Headers\supporting_functions.h)(0x56D20B12)
-I (.\Headers\display.h)(0x581BCC66)
-I (.\Headers\transceiver_protocol.h)(0x583F64FE)
+I (.\Headers\display.h)(0x583F889E)
+I (.\Headers\transceiver_protocol.h)(0x583F8F8A)
 I (.\Headers\cc2500.h)(0x583F4694)
 I (.\Headers\hardware_timer.h)(0x581BC75A)
 I (.\Headers\display_thread.h)(0x581BCB1C)
 I (.\Headers\led_thread.h)(0x581BCAFA)
 I (.\Headers\transceiver_thread.h)(0x583E1048)
-F (.\Sources\transceiver_thread.c)(0x583F622C)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\transceiver_thread.o --omf_browse .\objects\transceiver_thread.crf --depend .\objects\transceiver_thread.d)
-I (.\Headers\main.h)(0x583F4EA4)
+F (.\Sources\transceiver_thread.c)(0x583FA76A)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\transceiver_thread.o --omf_browse .\objects\transceiver_thread.crf --depend .\objects\transceiver_thread.d)
+I (.\Headers\main.h)(0x583F8EEC)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C318A8)
@@ -507,17 +507,17 @@ I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x57
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C318A8)
 I (.\Headers\sysclk_config.h)(0x57F11764)
 I (.\Headers\supporting_functions.h)(0x56D20B12)
-I (.\Headers\display.h)(0x581BCC66)
-I (.\Headers\transceiver_protocol.h)(0x583F64FE)
+I (.\Headers\display.h)(0x583F889E)
+I (.\Headers\transceiver_protocol.h)(0x583F8F8A)
 I (.\Headers\cc2500.h)(0x583F4694)
 I (.\Headers\hardware_timer.h)(0x581BC75A)
 I (.\Headers\display_thread.h)(0x581BCB1C)
 I (.\Headers\led_thread.h)(0x581BCAFA)
 I (.\Headers\transceiver_thread.h)(0x583E1048)
-F (.\Headers\display.h)(0x581BCC66)()
+F (.\Headers\display.h)(0x583F889E)()
 F (.\Headers\display_thread.h)(0x581BCB1C)()
 F (.\Headers\hardware_timer.h)(0x581BC75A)()
-F (.\Headers\main.h)(0x583F4EA4)()
+F (.\Headers\main.h)(0x583F8EEC)()
 F (.\Headers\stm32f4xx_it.h)(0x56D20B12)()
 F (.\Headers\supporting_functions.h)(0x56D20B12)()
 F (.\Headers\sysclk_config.h)(0x57F11764)()
@@ -525,10 +525,10 @@ F (.\Headers\led_thread.h)(0x581BCAFA)()
 F (.\Headers\cc2500.h)(0x583F4694)()
 F (.\Headers\cc2500_settings.h)(0x583F46A2)()
 F (.\Headers\transceiver_thread.h)(0x583E1048)()
-F (.\Headers\transceiver_protocol.h)(0x583F64FE)()
+F (.\Headers\transceiver_protocol.h)(0x583F8F8A)()
 F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Lib\ARM\arm_cortexM4lf_math.lib)(0x57365A7E)()
 F (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM4.lib)(0x57365A80)()
-F (RTE\CMSIS\RTX_Conf_CM.c)(0x583DCAC2)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
+F (RTE\CMSIS\RTX_Conf_CM.c)(0x583FA074)(-c --cpu Cortex-M4.fp -D__RTX -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I.\Headers-I F:\McGill\FinalProject\RTE-I F:\McGill\FinalProject\RTE\Device\STM32F407VGTx-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.9.0\Drivers\STM32F4xx_HAL_Driver\Inc-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DHSE_VALUE="8000000" -DLSE_STARTUP_TIMEOUT="10000" -DARM_MATH_CM4 --C99-o .\objects\rtx_conf_cm.o --omf_browse .\objects\rtx_conf_cm.crf --depend .\objects\rtx_conf_cm.d)
 I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\RTOS\RTX\INC\cmsis_os.h)(0x57365A80)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C318A8)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C318A8)

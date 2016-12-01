@@ -37,10 +37,18 @@ void display_thread(void const *args)
 	while(1)
 	{
 		osSignalWait(0x00000001, osWaitForever);
-//		// Cyclign through displays
-//		display_cycling();
+		// Cyclign through displays
+		display_cycling();
+		if (connected)
+		{
+			display(connected, display_counter);
+		}
+		else
+		{
+			display(connected, display_counter);
+		}
+		
 //		blink_counter();
-//		
 //		// Check if dangerous temperature has been reached
 //		if (temperature < ALARM || (temperature >= ALARM && alarm_counter <= COUNTERALARM/2))
 //		{	//ALARM TEMPERATURE SETTING	

@@ -97,7 +97,7 @@ void blink_counter(void)
 }
 
 // DISPLAY SWITCH FUNCTION
-void display(float value, int display)
+void display(int value, int display)
 {
 	switch (display)
 	{
@@ -107,20 +107,10 @@ void display(float value, int display)
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_12, GPIO_PIN_SET);
 		
-			if(value >= 0)
-			{
-				if (value < 100.0f && value >=10.0f){
-					led_number((((int)value)%100)/10, 0);
-				}else if (value < 10.0f){
-					led_number((int)value, 1);
-				}else if (value >= 100.0f){
-					led_number(((int)value)%1000/100, 0);
-				}
-			}
-			if(value >= 0)
-			{
+			if(value == 1)
+				led_char('G', 0);
+			else
 				led_char('&', 0); // DISPALY BLANK FOR INPUT
-			}
 			break;
 	
 		// DISPLAY 2
@@ -129,20 +119,10 @@ void display(float value, int display)
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_12, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13, GPIO_PIN_SET);
 	
-			if(value >= 0)
-			{
-				if (value < 100.0f && value >=10.0f){
-					led_number(((int)value)%100-(((int)value)%100/10)*10, 1);
-				}else if (value < 10.0f){
-					led_number((int)(value*10)%100-((int)(value*10)%100/10)*10, 0);
-				}else if (value >= 100.0f){
-					led_number(((int)value)%1000/10-((((int)value)%1000/10)/10)*10,0);
-				}
-			}
-			if(value >= 0)
-			{
-				led_char('&', 0); // DISPALY BLANK FOR INPUT
-			}
+			if(value == 1)
+				led_char('o', 0);
+			else
+				led_char('B', 0); // DISPALY BLANK FOR INPUT
 			break;
 	
 		// DISPLAY 3
@@ -151,20 +131,10 @@ void display(float value, int display)
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_13, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_14, GPIO_PIN_SET);
 
-			if(value >= 0)
-			{
-				if (value < 100.0f && value >=10.0f){
-					led_number((int)(value*10)%10, 0);
-				}else if (value < 10.0f){
-					led_number((int)(value*100)%10, 0);
-				}else if (value >= 100.0f){
-					led_number(((int)value)%10, 0);
-				}
-			}
-			if(value >= 0)
-			{
-				led_char('&', 0); // DISPALY BLANK FOR INPUT
-			}
+			if(value == 1)
+				led_char('o', 0);
+			else
+				led_char('A', 0); // DISPALY BLANK FOR INPUT
 			break;
 	
 		// DISPLAY 4
@@ -173,14 +143,10 @@ void display(float value, int display)
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_14, GPIO_PIN_RESET);
 			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_15, GPIO_PIN_SET);
 			
-			if(value >= 0)
-				led_char('c', 0); // DISPLAY C FOR TEMP
-			if(value >= 0)
-				led_char('|', 0); // DISPLAY - FOR ROLL
-			if(value >= 0)
-				led_char('-', 0); // DISPLAY | FOR PITCH
-			if(value >= 0)
-				led_char('&', 0); // DISPALY BLANK FOR INPUT
+			if(value == 1)
+				led_char('d', 1);
+			else
+				led_char('d', 1); // DISPALY BLANK FOR INPUT
 			break;
 	
 		// DISPLAY BLANK
@@ -205,9 +171,9 @@ void display(float value, int display)
  *	PIN 16 = PIN D 10			// B
  *	PIN 13 = PIN D  9			// C
  *	PIN  3 = PIN D  8			// D		
- *	PIN  5 = PIN B 15			// E			PIN E 4
- *	PIN 11 = PIN B 14			// F			PIN E 6
- *	PIN 15 = PIN B 13 		// G			PIN E 7
+ *	PIN  5 = PIN B 15			// E						PIN E 4
+ *	PIN 11 = PIN B 14			// F						PIN E 6
+ *	PIN 15 = PIN B 13 		// G						PIN E 7
  *	PIN  7 = PIN B 12			// LOWER DOT		PIN E 5
  *	PIN 10 = PIN B 11			// UPPER DOT 		PIN E 8 
 */
@@ -359,20 +325,20 @@ void led_char(char number, int dot)
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_RESET);				// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_RESET);				// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);					// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_RESET);					// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_RESET);					// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_RESET);				// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_RESET);				// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_RESET);				// G
 			break;
 		
 		// DISPLAY 'C'
-		case 'c':
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_RESET);				// A
+		case 'C':
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);					// A
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_RESET);				// C
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_SET);					// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);						// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_RESET);					// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);						// G
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8,	GPIO_PIN_SET);					// D
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_SET);					// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_RESET);				// G
 			break;
 		
 		// DISPLAY 'P'
@@ -381,29 +347,39 @@ void led_char(char number, int dot)
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET);					// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_RESET);				// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_RESET);				// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);						// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_SET);						// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);						// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_SET);					// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_SET);					// G
 			break;
 		
-		case 'a':
+		case 'G':
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);					// A
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_SET);					// C
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_SET);					// D
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_SET);					// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_RESET);				// G
+			break;
+		
+		case 'A':
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);					// A
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET);					// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_SET);					// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_RESET);				// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);						// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_SET);						// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);						// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_SET);					// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_SET);					// G
 			break;
 		
-		case 'b':
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_RESET);				// A
-			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
+		case 'B':
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_SET);					// A
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET);					// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_SET);					// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_SET);					// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);						// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_SET);						// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);						// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_SET);					// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_SET);					// G
 			break;
 		
 		case 'd':
@@ -411,9 +387,19 @@ void led_char(char number, int dot)
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_SET);					// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_SET);					// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_SET);					// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);						// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_SET);						// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_RESET);					// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_RESET);				// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_SET);					// G
+			break;
+		
+		case 'o':
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_11, GPIO_PIN_RESET);				// A
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_SET);					// C
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_SET);					// D
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_RESET);				// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_SET);					// G
 			break;
 		
 		case '-':
@@ -421,9 +407,9 @@ void led_char(char number, int dot)
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_RESET);				// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_RESET);				// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_RESET);					// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_RESET);					// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_SET);						// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_RESET);				// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_RESET);				// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_SET);					// G
 			break;
 		
 		case '|':
@@ -431,9 +417,9 @@ void led_char(char number, int dot)
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_10, GPIO_PIN_RESET);				// B
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_9, 	GPIO_PIN_RESET);				// C
 			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_8, 	GPIO_PIN_RESET);				// D
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET);						// E
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, GPIO_PIN_SET);						// F
-			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, GPIO_PIN_RESET);					// G
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, 	GPIO_PIN_SET);					// E
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_6, 	GPIO_PIN_SET);					// F
+			HAL_GPIO_WritePin(GPIOE, GPIO_PIN_7, 	GPIO_PIN_RESET);				// G
 			break;
 		
 		default:
